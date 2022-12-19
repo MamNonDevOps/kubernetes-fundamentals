@@ -171,14 +171,14 @@ cat index.html
 exit
 ```
 
-# Connect to an other container in a POD
+- **Connect to an other container in a POD**
 ```
 kubectl exec -it <pod-name> --container <container-name> -- /bin/bash
 
 kubectl exec -it <pod-name> --c <container-name> -- /bin/bash
 ```
 
-# List all container name in a POD
+- **List all container name in a POD**
 ```
 kubectl get pods <pod-name> -o jsonpath='{.spec.containers[*].name}'
 
