@@ -124,6 +124,14 @@ kubectl replace -f replicaset-demo.yml
 kubectl get pods -o wide
 ```
 
+- Update the **replicas** by command from 3 to 6.
+```
+kubectl scale --replicas=6 replicaset/<replicaset-name>
+kubectl scale --replicas=6 rs <replicaset-name>
+
+kubectl scale --replicas=6 replicaset.apps/my-helloworld-rs
+```
+
 ## Step-06: Delete ReplicaSet & Service
 ### Delete ReplicaSet
 ```
