@@ -79,8 +79,8 @@ http://<worker-node-public-ip>:<Node-Port>
 ### Edit Deployment
 ```
 # Edit Deployment
-kubectl edit deployment/<Deployment-Name> --record=true
-kubectl edit deployment/my-first-deployment --record=true
+kubectl edit deployment/<Deployment-Name>
+kubectl edit deployment/my-first-deployment
 ```
 
 ```yml
