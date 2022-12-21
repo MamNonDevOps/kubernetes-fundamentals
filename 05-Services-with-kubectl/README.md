@@ -15,7 +15,7 @@
 - Create a ClusterIP service for load balancing backend application. 
 ```
 # Create Deployment for Backend Rest App
-kubectl create deployment my-backend-rest-app --image=stacksimplify/kube-helloworld:1.0.0 
+kubectl create deployment my-backend-rest-app --image=yeasy/simple-web:latest
 kubectl get deploy
 
 # Create ClusterIp Service for Backend Rest App
