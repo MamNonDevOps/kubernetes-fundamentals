@@ -14,6 +14,8 @@
 ```
 # Create Deployment
 kubectl create deployment <Deplyment-Name> --image=<Container-Image>
+kubectl create deploy <Deplyment-Name> --image=<Container-Image>
+
 kubectl create deployment my-first-deployment --image=stacksimplify/kubenginx:1.0.0 
 
 # Verify Deployment
@@ -22,6 +24,8 @@ kubectl get deploy
 
 # Describe Deployment
 kubectl describe deployment <deployment-name>
+kubectl describe deploy <deployment-name>
+
 kubectl describe deployment my-first-deployment
 
 # Verify ReplicaSet
@@ -35,6 +39,8 @@ kubectl get po
 ```
 # Scale Up the Deployment
 kubectl scale --replicas=20 deployment/<Deployment-Name>
+kubectl scale --replicas=20 deploy <Deployment-Name>
+
 kubectl scale --replicas=20 deployment/my-first-deployment 
 
 # Verify Deployment
